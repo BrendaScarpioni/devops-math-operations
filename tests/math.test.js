@@ -1,20 +1,21 @@
-function soma(a, b) {
-  return a + b;
-}
+const { somar, subtrair, multiplicar, dividir } = require('../src/math');
 
-function subtracao(a, b) {
-  return a - b;
-}
+test('soma dois números', () => {
+  expect(somar(2, 3)).toBe(5);
+});
 
-function multiplicacao(a, b) {
-  return a * b;
-}
+test('subtrai dois números', () => {
+  expect(subtrair(5, 3)).toBe(2);
+});
 
-function divisao(a, b) {
-  if (b === 0) {
-    throw new Error("Divisão por zero não é permitida");
-  }
-  return a / b;
-}
+test('multiplica dois números', () => {
+  expect(multiplicar(4, 3)).toBe(12);
+});
 
-module.exports = { soma, subtracao, multiplicacao, divisao };
+test('divide dois números', () => {
+  expect(dividir(10, 2)).toBe(5);
+});
+
+test('não permite divisão por zero', () => {
+  expect(() => dividir(10, 0)).toThrow('Divisão por zero não é permitida');
+});
