@@ -21,7 +21,7 @@ Os testes estão implementados com Jest e cobrem todas as funções matemáticas
 ### Rodar os testes localmente
 ```bash
 npm install
-npm test
+npm test ```
 
 
 ## 👤 Autores
