@@ -1,3 +1,4 @@
+![CI](https://github.com/BrendaScarpioni/devops-math-operations/actions/workflows/ci.yml/badge.svg)
 
 # DevOps Math Operations
 
